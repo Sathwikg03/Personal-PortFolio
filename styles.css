@@ -219,6 +219,13 @@ nav .right a span {
   flex: 8;
 }
 
+/* Optional: highlight the first project card */
+#projects .grid > div:first-child {
+  border: 2px solid #4a76ee;
+  background-color: #f8faff;
+}
+
+
 /* SECTION 4: Contact */
 .contact-section {
   padding: 0 50px;
