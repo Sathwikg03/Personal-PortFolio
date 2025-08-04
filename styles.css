@@ -179,7 +179,7 @@ nav .right a span {
 .tab-titles {
   display: flex;
   justify-content: center; /* Center the tabs horizontally */
-  gap: 40px;
+  gap: 80px;
   margin: 20px 0;
 }
 
