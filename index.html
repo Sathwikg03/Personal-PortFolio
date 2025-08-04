@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="images/favicon.ico" >
+
+  <!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+  <title>Sathwik Ram Gangapuram</title>
+</head>
+
+<script>
+  function scrollSlider(id, direction) {
+    const container = document.getElementById(id);
+    const scrollAmount = container.offsetWidth; // scroll by card width
+    container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+  }
+</script>
+
+
+
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Sathwik Ram Gangapuram</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:john@example.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Sathwik 👋</h2>
+        <p>I am a passionate and skilled computer science enthusiast with hands-on experience of 3-Year project development in full-stack development and cybersecurity projects. I’ve worked with technologies like Python, MySQL, HTML, CSS, JS and PHP . My projects include web apps, desktop GUIs, and automation tools that reflect my problem-solving mindset. I’m known for being a fast learner, detail-oriented, and a reliable team player. I continuously strive to grow and contribute meaningfully to impactful tech solutions.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#education">
+            <i class="fa-solid fa-address-card"></i>
+            <span>About</span>
+          </a>
+
+          <a href="#projects">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Projects</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/me.jpg">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        I am skilled in full-stack development with hands-on experience in HTML, CSS, JavaScript, PHP, and MySQL.
+  I also have experience working with Python for automation and backend logic.
+My strengths lie in logical thinking, clean code practices, and rapid problem-solving.
+I am a quick learner who adapts to new technologies and contributes effectively in team environments.
+        </div>
+
+        <div class="cells">
+              
+        <div class="cell">
+          <img src="images/python-logo-only.svg" alt="python logo">
+          <span>Python</span>
+        </div>
+          
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/new-php-logo.svg" alt="php logo">
+          <span>PHP</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Education -->
+    <section id="education" class="testimony-section">
+      <h2>About</h2>
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab(event, 'education-tab')">Education</p>
+        <p class="tab-links" onclick="opentab(event, 'experience-tab')">Experience</p>
+      </div>
+      
+      <div class="tab-contents active-tab" id="education-tab">
+        <ul>
+          <li><span>B.Tech</span><br>Currently Pursuing B.Tech In MREC With Current CGPA Of 8.92.</li>
+          <li><span>Intermediate</span><br>Studied At Sri Chaitanya Jr. College, With Percentage Of 98.3%.</li>
+          <li><span>SSC</span><br>Studied At Sri Chaitanya School, With A CGPA Of 10.0.</li>
+        </ul>
+      </div>
+      
+      <div class="tab-contents" id="experience-tab">
+        <ul>
+          <li><span>Python</span><br>Developed GUI Interface For A Hospital App Project.</li>
+          <li><span>Web Development</span><br>Creating Own Portfolio.</li>
+          <li><span>DBMS</span><br>Created A Database For Hospital Data.</li>
+        </ul>
+      </div>
+      
+    </section>
+
+    <!--PROJECTS-->
+
+    <section id="projects" style="background-color: #fff;" class="py-16 px-6 text-gray-800">
+
+      <h2 class="text-4xl font-bold mb-10 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        
+        <!-- Project Card -->
+        <div class="bg-white rounded-xl shadow-md p-5 space-y-4">
+          <video autoplay loop muted playsinline class="rounded-lg object-cover w-full h-auto">
+            <source src="images/chatbot.mp4" type="video/mp4">
+          </video>
+          <div>
+            <h3 class="text-xl font-semibold">Hospital App</h3>
+            <p class="text-sm text-gray-500">Jan 2023 – Apr 2023</p>
+            <p class="mt-2 text-gray-600 text-sm">
+              Developed a GUI-based hospital management app using Python. Features include patient records, billing, and appointment scheduling.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-brands fa-python text-blue-500"></i> Python
+            </span>
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-solid fa-brush"></i> Tkinter
+            </span>
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-solid fa-database text-gray-700"></i> MySQL
+            </span>
+          </div>
+          
+          <div class="flex gap-3 mt-3">
+            <a href="#" class="bg-black text-white px-4 py-2 rounded-md text-sm flex items-center gap-2"><i class="fa-solid fa-globe"></i> Website</a>
+            <a href="#" class="bg-gray-200 text-black px-4 py-2 rounded-md text-sm flex items-center gap-2"><i class="fa-brands fa-github"></i> Source</a>
+          </div>
+        </div>
+    
+        <!-- Project Card 2 -->
+        <div class="bg-white rounded-xl shadow-md p-5 space-y-4">
+          <video autoplay loop muted playsinline class="rounded-lg object-cover w-full h-auto">
+            <source src="images/chatbot.mp4" type="video/mp4">
+          </video>
+          <div>
+            <h3 class="text-xl font-semibold">Portfolio Website</h3>
+            <p class="text-sm text-gray-500">May 2023 – Present</p>
+            <p class="mt-2 text-gray-600 text-sm">
+              A personal developer portfolio made with HTML, CSS, and JavaScript to showcase my skills, resume, and projects.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-brands fa-html5 text-orange-500"></i> HTML
+            </span>
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-brands fa-css3-alt text-blue-600"></i> CSS
+            </span>
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-brands fa-js text-yellow-500"></i> JS
+            </span>
+          </div>
+          
+          <div class="flex gap-3 mt-3">
+            <a href="#" class="bg-black text-white px-4 py-2 rounded-md text-sm flex items-center gap-2"><i class="fa-solid fa-globe"></i> Website</a>
+            <a href="#" class="bg-gray-200 text-black px-4 py-2 rounded-md text-sm flex items-center gap-2"><i class="fa-brands fa-github"></i> Source</a>
+          </div>
+        </div>
+    
+        <!-- Project Card 3 -->
+        <div class="bg-white rounded-xl shadow-md p-5 space-y-4">
+          <video autoplay loop muted playsinline class="rounded-lg object-cover w-full h-auto">
+            <source src="images/chatbot.mp4" type="video/mp4">
+          </video>
+          <div>
+            <h3 class="text-xl font-semibold">AI Chatbot</h3>
+            <p class="text-sm text-gray-500">Aug 2023 – Oct 2023</p>
+            <p class="mt-2 text-gray-600 text-sm">
+              Built a conversational AI chatbot capable of responding to user queries with predefined logic and generating small talk.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-brands fa-php text-indigo-600"></i> PHP
+            </span>
+            
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-solid fa-book text-green-600"></i> NLTK
+            </span>
+            <span class="bg-gray-100 px-3 py-1 rounded-full text-sm flex items-center gap-1">
+              <i class="fa-solid fa-network-wired text-purple-600"></i> API
+            </span>
+          </div>
+          
+          <div class="flex gap-3 mt-3">
+            <a href="#" class="bg-black text-white px-4 py-2 rounded-md text-sm flex items-center gap-2"><i class="fa-solid fa-globe"></i> Website</a>
+            <a href="#" class="bg-gray-200 text-black px-4 py-2 rounded-md text-sm flex items-center gap-2"><i class="fa-brands fa-github"></i> Source</a>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+
+    <!-- SECTION 4: Contact -->
+ 
+      <!-- SECTION 4: Contact -->
+<section id="contact" class="contact-section">
+  <h2>Contact</h2>
+
+  <div class="group">
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const formData = new URLSearchParams();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+
+    fetch("https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbzB_FGkYcDWWWesHk7-Sw-Go4SJIohsZBVUNZEirv0BR5HX8b2YUKODKLVTuW-Nk0sOsg/exec", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+      if (data.status === "success") {
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      } else {
+        throw new Error(data.message || "Unknown error");
+      }
+    })
+    .catch(err => {
+      console.error("Error:", err);
+      alert("There was an error sending your message.");
+    });
+  });
+</script>
+
+    
+  </main>
+  
+</body>
+
+<script>
+  function opentab(event, tabname) {
+    // Hide all tab contents
+    const tabcontents = document.getElementsByClassName("tab-contents");
+    for (let i = 0; i < tabcontents.length; i++) {
+      tabcontents[i].classList.remove("active-tab");
+    }
+
+    // Remove active-link from all tabs
+    const tablinks = document.getElementsByClassName("tab-links");
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active-link");
+    }
+
+    // Show the selected tab content
+    document.getElementById(tabname).classList.add("active-tab");
+
+    // Add active-link to the clicked tab
+    event.currentTarget.classList.add("active-link");
+  }
+</script>
+
+</script>
+
+
+
+</html>
